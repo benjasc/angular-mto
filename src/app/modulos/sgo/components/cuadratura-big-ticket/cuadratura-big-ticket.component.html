@@ -1,0 +1,64 @@
+<app-main-navbar></app-main-navbar>
+<div class=" color ">
+    <section class="container is-fluid ">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="card">
+                    <p class="card-header-title">Ingrese Parámetros</p>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="field ">
+                                <label class="label is-small ">Fecha Venta:</label>
+                                <div class="control is-disabled ">
+                                    <my-date-picker [(ngModel)]="fecha" (dateChanged)="action()"></my-date-picker>
+                                </div>
+                                <!--<app-email></app-email>-->
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="field ">
+                                <label class="label is-small ">Sucursal Venta:</label>
+                                <div class="select">
+                                    <select>
+                                      <option>(Todos)</option>
+                                      <option>With options</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="field ">
+                                <a class="button is-large">
+                                    <span class="icon is-medium">
+                                        <i class="fas fa-caret-right"></i>
+                                    </span>
+                                    <span>Ejecutar Consulta</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container is-fluid ">
+        <div class="columns">
+            <div class="column is-12">
+                <div class="card">
+                    <table datatable>
+                        <thead>
+                            <tr>
+                                <td>Hola</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Chao</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
